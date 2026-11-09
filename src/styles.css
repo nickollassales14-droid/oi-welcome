@@ -548,3 +548,74 @@ html{scroll-behavior:smooth}
  .lp-faq-item>button{font-size:12px;padding:17px 2px}.lp-faq-item>p{font-size:10px}
  .lp-final{padding:66px 20px 75px}.lp-final h2{font-size:36px}.lp-footer{padding:28px 18px 105px;display:block}.lp-footer nav{margin-top:20px;gap:12px 17px}.lp-footer>p{margin-top:20px;line-height:1.6}
 }
+
+
+/* Visual refresh inspired by the supplied reference: stronger product mockups,
+   warm food photography, editorial color and clearer visual hierarchy. */
+:root{--lp-green:#a83d32;--lp-deep:#263b50;--lp-ink:#293746;--lp-muted:#737b82;--lp-cream:#fffaf3;--lp-pale:#fff0e8;--lp-gold:#d69a4b}
+.lp-topbar{background:#263b50}
+.lp-logo-icon{background:#fae7dc;color:#a83d32}
+.lp-logo{color:#263b50}
+.lp-nav button,.lp-button-primary,.lp-button-light,.lp-mobile-bar button{background:#a83d32;border-color:#a83d32}
+.lp-hero h1 em,.lp-section-heading h2 em,.lp-audience-copy h2 em{color:#b94b3d}
+.lp-intro-strip{background:#f8e9df;color:#874338}
+.lp-feature>span,.lp-category-card>span{background:#fff0e8}
+.lp-category-section{background:#f8eee5}
+.lp-category-card strong,.lp-total strong{color:#a83d32}
+.lp-offer{background:#263b50}
+.lp-plan-complete{border-color:#dcaa67}
+.lp-best-value{background:#d69a4b}
+.lp-guarantee{background:#fff2e9;border-color:#f0d9cb}
+.lp-guarantee-seal{color:#a83d32;border-color:#d8a99c}
+.lp-guarantee a{color:#a83d32}
+.lp-final{background:#f8e9df}
+.lp-final h2{color:#263b50}
+.lp-hero-art-showcase{height:510px;padding:0 24px 18px 28px}
+.lp-hero-art-showcase .lp-hero-food{border-radius:22px;box-shadow:0 24px 60px #263b5028}
+.lp-hero-art-showcase .lp-hero-food img{object-position:center}
+.lp-hero-art-showcase .lp-book-mock{left:-3px;bottom:20px;width:180px;height:252px;transform:rotate(-7deg);background:#fff8ed;border:1px solid #ecd8c7;box-shadow:12px 18px 32px #263b5038}
+.lp-book-mock>strong{color:#a83d32}
+.lp-hero-art-showcase .lp-hero-sticker{right:2px;top:26px;bottom:auto;background:#fff8ed;border-color:#edc8b5;color:#a83d32}
+.lp-hero-sticker b{color:#a83d32}
+.lp-phone-mock{position:absolute;right:-4px;bottom:23px;width:142px;height:270px;padding:8px;border:5px solid #263b50;border-radius:23px;background:#263b50;box-shadow:0 16px 34px #263b5040;transform:rotate(5deg);z-index:2}
+.lp-phone-speaker{width:38px;height:5px;border-radius:8px;background:#65788a;margin:0 auto 7px}
+.lp-phone-screen{height:calc(100% - 12px);padding:13px 8px 8px;border-radius:12px;background:#fffaf3;display:flex;flex-direction:column;gap:7px;color:#263b50}
+.lp-phone-screen>small{font-size:6px;letter-spacing:.14em;color:#a83d32;font-weight:800}
+.lp-phone-screen>b{font:700 17px 'Playfair Display'}
+.lp-phone-screen>span{font-size:7px;color:#7b8186}
+.lp-phone-screen>div{display:flex;align-items:center;gap:6px;padding:6px 5px;border:1px solid #f0e5da;border-radius:6px;background:white;font-size:7px;font-weight:700}
+.lp-phone-screen>div i{font-style:normal;font-size:11px}
+.lp-hero-caption{position:absolute;right:24px;top:2px;color:#fff;background:#263b50d9;padding:10px 13px;border-radius:30px;font-size:8px;font-weight:800;letter-spacing:.12em}
+.lp-hero-caption span{color:#f2bd80;margin:0 4px}
+.lp-recipe-card{border-radius:12px;box-shadow:0 8px 24px #263b500d;transition:transform .25s,box-shadow .25s}
+.lp-recipe-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px #263b5018}
+.lp-recipe-image{height:190px}
+.lp-bonus-card{border-radius:12px;box-shadow:0 8px 25px #263b500c}
+.lp-bonus-cover{background:#f8e5d9;color:#8c4338}
+.lp-cover-mark{border-color:#d6a99b}
+.lp-plan{border-radius:13px}
+.lp-plan-price{color:#a83d32}
+.lp-plan-complete .lp-button{background:#a83d32;border-color:#a83d32}
+.lp-testimonial{border-radius:12px;box-shadow:0 8px 24px #263b500c}
+.lp-reviewer>span{background:#fae7dc;color:#a83d32}
+.lp-mobile-bar{border-top-color:#ead8ce}
+@media(max-width:850px){
+ .lp-hero-art-showcase{height:430px;max-width:590px}
+ .lp-hero-art-showcase .lp-book-mock{width:150px;height:218px}
+ .lp-phone-mock{width:125px;height:240px;right:0}
+}
+@media(max-width:520px){
+ .lp-hero-art-showcase{height:345px;padding:0 10px 8px 10px}
+ .lp-hero-art-showcase .lp-book-mock{width:120px;height:178px;left:-4px;bottom:6px;padding:10px}
+ .lp-hero-art-showcase .lp-book-mock>strong{font-size:34px}
+ .lp-phone-mock{width:103px;height:200px;right:-3px;bottom:9px;padding:6px;border-width:4px;border-radius:18px}
+ .lp-phone-screen{gap:4px;padding:9px 5px 5px}
+ .lp-phone-screen>b{font-size:13px}
+ .lp-phone-screen>div{padding:4px 3px;font-size:6px}
+ .lp-phone-screen>div i{font-size:9px}
+ .lp-hero-caption{right:9px;top:3px;font-size:6px;padding:7px 9px}
+ .lp-hero-art-showcase .lp-hero-sticker{width:68px;height:68px;right:2px;top:40px}
+ .lp-hero-art-showcase .lp-hero-sticker b{font-size:22px}
+ .lp-hero-art-showcase .lp-hero-sticker span{font-size:7px}
+ .lp-recipe-image{height:135px}
+}
