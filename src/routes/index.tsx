@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowDown, ArrowRight, Check, ChefHat, Clock3, Download, Heart,
   Leaf, LockKeyhole, Mail, Menu, ShieldCheck, Sparkles, Star, Utensils,
@@ -65,6 +65,33 @@ function SalesPage() {
   const [notice, setNotice] = useState("");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  useEffect(() => {
+    const w = window as Window & { fbq?: (...args: unknown[]) => void; gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
+    if (META_PIXEL_ID) {
+      if (!w.fbq) {
+        const fbq = (...args: unknown[]) => { (fbq as unknown as { queue: unknown[][] }).queue.push(args); };
+        (fbq as unknown as { queue: unknown[][] }).queue = [];
+        w.fbq = fbq;
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://connect.facebook.net/en_US/fbevents.js";
+        document.head.appendChild(script);
+      }
+      w.fbq("init", META_PIXEL_ID);
+      w.fbq("track", "PageView");
+    }
+    if (GA_MEASUREMENT_ID) {
+      w.dataLayer = w.dataLayer || [];
+      w.gtag = (...args: unknown[]) => { w.dataLayer?.push(args); };
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+      document.head.appendChild(script);
+      w.gtag("js", new Date());
+      w.gtag("config", GA_MEASUREMENT_ID);
+    }
+  }, []);
 
   function goToCheckout() {
     trackPurchaseIntent();
