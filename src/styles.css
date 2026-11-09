@@ -155,7 +155,6 @@
 }
 
 /* Landing page — 365 Receitas */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
 
 :root { --food-ink:#20352c; --food-green:#315b45; --food-deep:#203f31; --food-sage:#e7eee5; --food-cream:#faf8f1; --food-muted:#68766c; --food-gold:#c69a58; }
 html { scroll-behavior:smooth; }
