@@ -160,10 +160,12 @@ function SalesPage() {
           </div>
           <small className="lp-footnote">*Conforme as condições informadas na oferta.</small>
         </div>
-        <div className="lp-hero-art">
-          <div className="lp-hero-food"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1100&q=90" alt="Mesa com pratos variados e alimentos frescos" /></div>
-          <div className="lp-book-mock"><div className="lp-book-leaf"><Leaf size={23} /></div><small>COLEÇÃO DIGITAL</small><strong>365</strong><b>RECEITAS<br/>LEVES</b><span>Doces & salgadas</span><div className="lp-book-mini-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80" alt="Prato saudável" /></div></div>
+        <div className="lp-hero-art lp-hero-art-showcase">
+          <div className="lp-hero-food"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=90" alt="Mesa farta com receitas leves, frutas e preparações variadas" /></div>
+          <div className="lp-book-mock"><div className="lp-book-leaf"><Leaf size={23} /></div><small>COLEÇÃO DIGITAL</small><strong>365</strong><b>RECEITAS<br/>LEVES</b><span>Sem açúcar adicionado</span><div className="lp-book-mini-img"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80" alt="Prato colorido com vegetais" /></div></div>
+          <div className="lp-phone-mock"><div className="lp-phone-speaker"></div><div className="lp-phone-screen"><small>SUA COLEÇÃO</small><b>365 receitas</b><span>Escolha uma categoria</span><div><i>☀️</i>Café da manhã</div><div><i>🍓</i>Sobremesas</div><div><i>🥗</i>Refeições</div><div><i>🍞</i>Pães e bolos</div><div><i>🥥</i>Sem lactose</div></div></div>
           <div className="lp-hero-sticker"><b>365</b><span>receitas<br/>para inspirar</span></div>
+          <div className="lp-hero-caption"><span>✦</span> DOCES E SALGADAS <span>✦</span></div>
         </div>
       </section>
 
