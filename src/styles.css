@@ -379,7 +379,6 @@ body { margin:0; }
 
 
 /* 365 Receitas Leves — sales page */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
 :root{--lp-green:#315c43;--lp-deep:#203f30;--lp-ink:#26392d;--lp-muted:#748076;--lp-cream:#fbfaf5;--lp-pale:#edf2e9;--lp-gold:#c59a5c}
 html{scroll-behavior:smooth}
 .lp-page{font-family:'DM Sans',sans-serif;color:var(--lp-ink);background:var(--lp-cream);overflow:hidden;padding-bottom:0}
